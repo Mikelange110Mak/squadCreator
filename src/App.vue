@@ -14,15 +14,15 @@ export default {
 
 </script>
 
+
 <style>
+
 @import url('https://fonts.googleapis.com/css2?family=Marmelad&display=swap');
 #app {
-  
   font-family: 'Marmelad', sans-serif;
-  font-size: 18px;
-  height: 100%;
+  font-size: 17px;
+  
 }
-
 /*Null Styles*/
 *,
 *::before,
@@ -58,7 +58,5 @@ img {
 	vertical-align: top;
 }
 
-body{
-  background: linear-gradient(to bottom, #373b44, #4286f4);
-}
+
 </style>

@@ -9,10 +9,9 @@
         <div class="team__body">
           <section class="team__first-section">
             <div class="team__gk players">
-              <p class="team__name">{{ selectedPlayer.gk.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.gk.country" alt="">
+              <p class="team__name">{{ selectedPlayer.gk.title }}<img class="team__flag" :src="selectedPlayer.gk.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.gk.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.gk.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.gk.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevGk()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextGk()" class="next-selector">&#9658;</button>
@@ -22,40 +21,36 @@
           </section>
           <section class="team__second-section">
             <div class="team__def players">
-              <p class="team__name">{{ selectedPlayer.def.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.def.country" alt="">
+              <p class="team__name">{{ selectedPlayer.def.title }} <img class="team__flag" :src="selectedPlayer.def.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.def.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.def.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.def.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevDef()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextDef()"  class="next-selector">&#9658;</button>
               </div>
             </div>
             <div class="team__def players">
-              <p class="team__name">{{ selectedPlayer.def2.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.def2.country" alt="">
+              <p class="team__name">{{ selectedPlayer.def2.title }} <img class="team__flag" :src="selectedPlayer.def2.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.def2.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.def2.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.def2.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevDef2()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextDef2()" class="next-selector">&#9658;</button>
               </div>
             </div>
             <div class="team__def players">
-              <p class="team__name">{{ selectedPlayer.def3.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.def3.country" alt="">
+              <p class="team__name">{{ selectedPlayer.def3.title }} <img class="team__flag" :src="selectedPlayer.def3.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.def3.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.def3.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.def3.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevDef3()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextDef3()" class="next-selector">&#9658;</button>
               </div>
             </div>
             <div class="team__def players">
-              <p class="team__name">{{ selectedPlayer.def4.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.def4.country" alt="">
+              <p class="team__name">{{ selectedPlayer.def4.title }}<img class="team__flag" :src="selectedPlayer.def4.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.def4.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.def4.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.def4.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevDef4()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextDef4()" class="next-selector">&#9658;</button>
@@ -64,30 +59,27 @@
           </section>
           <section class="team__third-section">
             <div class="team__dm players">
-              <p class="team__name">{{ selectedPlayer.mid.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.mid.country" alt="">
+              <p class="team__name">{{ selectedPlayer.mid.title }}<img class="team__flag" :src="selectedPlayer.mid.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.mid.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.mid.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.mid.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevMid()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextMid()" class="next-selector">&#9658;</button>
               </div>
             </div>
             <div class="team__dm players">
-              <p class="team__name">{{ selectedPlayer.mid2.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.mid2.country" alt="">
+              <p class="team__name">{{ selectedPlayer.mid2.title }}<img class="team__flag" :src="selectedPlayer.mid2.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.mid2.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.mid2.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.mid2.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevMid2()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextMid2()" class="next-selector">&#9658;</button>
               </div>
             </div>
             <div class="team__dm players">
-              <p class="team__name">{{ selectedPlayer.mid3.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.mid3.country" alt="">
+              <p class="team__name">{{ selectedPlayer.mid3.title }}<img class="team__flag" :src="selectedPlayer.mid3.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.mid3.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.mid3.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.mid3.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevMid3()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextMid3()" class="next-selector">&#9658;</button>
@@ -96,37 +88,43 @@
           </section>
           <section class="team__fourth-section">
             <div class="team__atc players">
-              <p class="team__name">{{ selectedPlayer.atc.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.atc.country" alt="">
+              <p class="team__name">{{ selectedPlayer.atc.title }}<img class="team__flag" :src="selectedPlayer.atc.country" alt=""></p> 
               <img class="team__pic" :src="selectedPlayer.atc.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.atc.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.atc.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevAtc()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextAtc()" class="next-selector">&#9658;</button>
               </div>
             </div>
             <div class="team__atc players">
-              <p class="team__name">{{ selectedPlayer.atc2.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.atc2.country" alt="">
+              <p class="team__name">{{ selectedPlayer.atc2.title }}<img class="team__flag" :src="selectedPlayer.atc2.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.atc2.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.atc2.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.atc2.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevAtc2()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextAtc2()" class="next-selector">&#9658;</button>
               </div>
             </div>
             <div class="team__atc players">
-              <p class="team__name">{{ selectedPlayer.atc3.title }}</p>
-              <img class="team__flag" :src="selectedPlayer.atc3.country" alt="">
+              <p class="team__name">{{ selectedPlayer.atc3.title }}<img class="team__flag" :src="selectedPlayer.atc3.country" alt=""></p>
               <img class="team__pic" :src="selectedPlayer.atc3.src" title="gk">
-              <p class="team cost">{{ selectedPlayer.atc3.cost }}</p>
+              <p class="team__cost">{{ selectedPlayer.atc3.cost }}€</p>
               <div class="team__selectors">
                 <button v-on:click="selectPrevAtc3()" class="prev-selector">&#9668;</button>
                 <button v-on:click="selectNextAtc3()" class="next-selector">&#9658;</button>
               </div>
             </div>
           </section>
-
+        </div>
+      </div>
+      <div class="cart">
+        <div class="cart__body">
+          <div class="cart__button">
+            <button>Расчитать Стоимость</button>
+          </div>
+          <div class="cart__result">
+            <p>Итого:</p>
+          </div>
         </div>
       </div>
     </main>
@@ -259,10 +257,11 @@ export default {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(to bottom, #373b44, #4286f4);
 }
 main{
   flex: 1 1 auto;
-  padding: 10px;
+  padding: 10px 0;
 }
 .header{
   display: flex;
@@ -274,7 +273,10 @@ main{
   color: #ffffff;
   font-size: 22px;
 }
-
+.team{
+  padding: 5px;
+  margin-bottom: 50px;
+}
 .team__body section{
   display: flex;
   flex: 0 1 100%;
@@ -290,8 +292,16 @@ main{
   justify-content: center;
   row-gap: 10px;
 }
-
+.team__name{
+  display: flex;
+  align-items: center;
+}
+.team__cost{
+  font-size: 15px;
+  color: #071b0d;
+}
 .players{
+  padding: 5px;
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
@@ -299,6 +309,7 @@ main{
   border: 1px solid #3333333f;
   border-radius: 9px;
   align-items: center;
+  background-color: #424e6157;
 }
 .team__selectors{
   display: flex;
@@ -307,15 +318,45 @@ main{
   
 }
 .team__selectors button{
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   cursor: pointer;
+  border-radius: 4px;
 }
 
-.players img{
-  max-width: 160px;
+.team__pic{
+  width: 130px;
 }
 .team__flag{
   width: 15px;
+  margin-left: 3px;
+}
+.cart{
+  width: 100%;
+  padding: 5px 0px;
+  background-color: #28315036;
+}
+.cart__body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+}
+.cart__button button{
+  font-family: 'Marmelad', sans-serif;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 17px;
+
+  background-image: linear-gradient(to right, #485563 0%, #29323c  51%, #485563  100%);
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;              
+}
+.cart__button button:hover{
+  background-position: right center;
 }
 </style>
