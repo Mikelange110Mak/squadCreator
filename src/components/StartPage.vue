@@ -120,10 +120,12 @@
       <div class="cart">
         <div class="cart__body">
           <div class="cart__button">
-            <button>Расчитать Стоимость</button>
+            <button v-on:click="addToCart()">Расчитать Стоимость</button>
           </div>
           <div class="cart__result">
-            <p>Итого:</p>
+            <p v-for="(team, index) in cart" :key="index">
+              <span>{{ team.cost }}</span>
+            </p>
           </div>
         </div>
       </div>
@@ -150,6 +152,7 @@ export default {
   data() {
     return {
       players,
+      cart: [],
       selectedIndexGk: 0,
       selectedIndexDef:7,
       selectedIndexDef2:6,
@@ -181,6 +184,21 @@ export default {
     }
   },
   methods:{
+    addToCart(){
+      const team = this.selectedPlayer
+      const cost =  team.gk.cost +
+                    team.def.cost +
+                    team.def2.cost +
+                    team.def3.cost +
+                    team.def4.cost +
+                    team.mid.cost +
+                    team.mid2.cost +
+                    team.mid3.cost +
+                    team.atc.cost +
+                    team.atc2.cost +
+                    team.atc3.cost;
+      this.cart.push(Object.assign({}, team, {cost}))
+    },
     selectPrevGk(){
       this.selectedIndexGk = getPreviousValidIndex(this.selectedIndexGk, players.gk.length)
     },
